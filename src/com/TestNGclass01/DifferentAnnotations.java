@@ -1,5 +1,12 @@
 package com.TestNGclass01;
-
+/*
+ * 
+ * 
+@BeforeMethod – Pre-condition for every Test case in a Class/Program
+@AfterMethod Post-condition for every Test case in a Class/Program
+@BeforeClass -Pre-condition for All Test cases in a Class/Program
+@AfterClasee -Post-condition for All Test cases in a Class/Program
+ */
 import org.testng.annotations.*;
 
 public class DifferentAnnotations {
@@ -52,7 +59,7 @@ public class DifferentAnnotations {
 }
 	
 	
-}
+
 /*
  * @BeforeClassThe annotated method will be executed Before any of the test method of a test class.
    @AfterClassThe annotated method will be executed After any of the test method of a test class.
