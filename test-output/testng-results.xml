@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-19T19:48:25 EDT" name="Default suite" finished-at="2020-05-19T19:48:25 EDT" duration-ms="36">
+    <groups>
+    </groups>
+    <test started-at="2020-05-19T19:48:25 EDT" name="Default test" finished-at="2020-05-19T19:48:25 EDT" duration-ms="36">
+      <class name="com.TestNGclass01.DifferentAnnotations">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.TestNGclass01.DifferentAnnotations@8909f18]" started-at="2020-05-19T19:48:25 EDT" name="beforeMethod" finished-at="2020-05-19T19:48:25 EDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test()[pri:0, instance:com.TestNGclass01.DifferentAnnotations@8909f18]" started-at="2020-05-19T19:48:25 EDT" name="test" finished-at="2020-05-19T19:48:25 EDT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.TestNGclass01.DifferentAnnotations@8909f18]" started-at="2020-05-19T19:48:25 EDT" name="afterMethod" finished-at="2020-05-19T19:48:25 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.TestNGclass01.DifferentAnnotations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
