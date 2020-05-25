@@ -1,6 +1,5 @@
 package com.utils;
 
-
 import java.util.List;
 import java.util.Set;
 
@@ -14,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CommonMethods extends BaseClass {
+public class CommonMethods extends PageInitializer {
 
 	/**
 	 * Method that clears and sends keys
@@ -250,13 +249,4 @@ public class CommonMethods extends BaseClass {
 			e.printStackTrace();
 		}
 	}
-	public static void isDisplayed(WebElement element) {
-		boolean displayText=element.isDisplayed();
-		String text=element.getText();
-		if(displayText) {
-			System.out.println(text+" is display. test pass");	
-	    }else {
-	    	System.out.println(text+" is not display. test fail");
-	    	}
-	    }
 }

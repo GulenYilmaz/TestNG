@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-19T19:48:25 EDT" name="Default suite" finished-at="2020-05-19T19:48:25 EDT" duration-ms="36">
+  <suite started-at="2020-05-25T00:48:51 EDT" name="Default suite" finished-at="2020-05-25T00:49:02 EDT" duration-ms="10858">
     <groups>
     </groups>
-    <test started-at="2020-05-19T19:48:25 EDT" name="Default test" finished-at="2020-05-19T19:48:25 EDT" duration-ms="36">
-      <class name="com.TestNGclass01.DifferentAnnotations">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.TestNGclass01.DifferentAnnotations@8909f18]" started-at="2020-05-19T19:48:25 EDT" name="beforeMethod" finished-at="2020-05-19T19:48:25 EDT" duration-ms="3" status="PASS">
+    <test started-at="2020-05-25T00:48:51 EDT" name="Default test" finished-at="2020-05-25T00:49:02 EDT" duration-ms="10858">
+      <class name="com.TestNG__class01.hw2">
+        <test-method is-config="true" signature="openAndNavigate()[pri:0, instance:com.TestNG__class01.hw2@3901d134]" started-at="2020-05-25T00:48:52 EDT" name="openAndNavigate" finished-at="2020-05-25T00:49:00 EDT" duration-ms="8633" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="test()[pri:0, instance:com.TestNGclass01.DifferentAnnotations@8909f18]" started-at="2020-05-19T19:48:25 EDT" name="test" finished-at="2020-05-19T19:48:25 EDT" duration-ms="4" status="PASS">
+        </test-method> <!-- openAndNavigate -->
+        <test-method signature="validLogin()[pri:0, instance:com.TestNG__class01.hw2@3901d134]" started-at="2020-05-25T00:49:00 EDT" name="validLogin" finished-at="2020-05-25T00:49:02 EDT" duration-ms="2138" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.TestNGclass01.DifferentAnnotations@8909f18]" started-at="2020-05-19T19:48:25 EDT" name="afterMethod" finished-at="2020-05-19T19:48:25 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.TestNG__class01.hw2@3901d134]" started-at="2020-05-25T00:49:02 EDT" name="quitBrowser" finished-at="2020-05-25T00:49:02 EDT" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.TestNGclass01.DifferentAnnotations -->
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.TestNG__class01.hw2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,4 +1,4 @@
-package com.TestNGclass02;
+package com.TestNG__class02;
 
 public class notes {
 /*
@@ -6,14 +6,14 @@ public class notes {
 	 * TestNG is designed to cover all categories of tests:unit, functional, integration, end-to-end etc.
 	 *
 	 * Why to Use TestNG: major advantages of TestNG are :
-		‚óè It gives the ability to produce HTML Reports of execution
-		‚óè Annotations made testers life easy
-		‚óè Test cases can be Grouped & Prioritized (You can Set the Execution Order) more easily
-		‚óè Parallel testing is possible
-		‚óè Batch execution is possible
-		‚óè Assertions (verifications) is possible
-		‚óè Data Parameterization is possible
-		‚óè TestNG can be easily integrated with many different tools: selenium, maven, cucumber etc
+		‚ó? It gives the ability to produce HTML Reports of execution
+		‚ó? Annotations made testers life easy
+		‚ó? Test cases can be Grouped & Prioritized (You can Set the Execution Order) more easily
+		‚ó? Parallel testing is possible
+		‚ó? Batch execution is possible
+		‚ó? Assertions (verifications) is possible
+		‚ó? Data Parameterization is possible
+		‚ó? TestNG can be easily integrated with many different tools: selenium, maven, cucumber etc
 	
 		How to install TestNG:
 		1. Click Help and Install New Software

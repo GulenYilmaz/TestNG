@@ -1,8 +1,21 @@
-package com.TestNGclass01;
+package com.TestNG__class01;
 
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class TaskTwo {
+/*
+ * Task 1: Executing different test based TestNG
+annotations
+ Create class that will have:
+ Before and After Class annotation
+ Before and After Method annotation
+ 2 methods with Test annotation
+Observe the results!
+ */
+public class Task1 {
 
 	@BeforeClass
 	public void beforeClass() {
@@ -33,10 +46,4 @@ public class TaskTwo {
 	public void test2() {
 		System.out.println("This is test 2");
 	}
-	
-	@Test
-	public void test3() {
-		System.out.println("This is test 3");
-	}
-
 }
