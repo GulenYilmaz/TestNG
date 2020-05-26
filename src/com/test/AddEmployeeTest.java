@@ -12,6 +12,9 @@ import com.utils.ConfigsReader;
 
 public class AddEmployeeTest extends CommonMethods {
 
+	
+	
+	
 //	@BeforeMethod
 //	public void openBrowser() {
 //		setUp();
@@ -23,6 +26,11 @@ public class AddEmployeeTest extends CommonMethods {
 //		tearDown();
 //	}
 
+	
+	
+	
+	
+	
 	@Test
 	public void addEmployeePage() {
 		
@@ -36,6 +44,8 @@ public class AddEmployeeTest extends CommonMethods {
 //		waitAndClick(addEmp.saveEmp);
 		
 		//add assertion to verify that employee has been added successfully
+	
+		
 		
 		
 	}

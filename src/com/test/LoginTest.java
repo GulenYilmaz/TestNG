@@ -11,6 +11,9 @@ import com.utils.ConfigsReader;
 
 public class LoginTest extends CommonMethods{
 
+	
+	
+	
 //	@BeforeMethod
 //	public void openBrowser() {
 //		setUp();
@@ -22,6 +25,11 @@ public class LoginTest extends CommonMethods{
 //		tearDown();
 //	}
 //	
+	
+	
+	
+	
+	
 	@Test
 	public void validAdminLogin() {
 		//LoginPageElements login = new LoginPageElements();
@@ -36,6 +44,12 @@ public class LoginTest extends CommonMethods{
 		Assert.assertTrue(actualUser.contains(ConfigsReader.getProperty("username")));
 	}
 	
+	
+	
+	
+	
+	
+	
 	@Test
 	public void invalidPasswordLogin() {
 		//LoginPageElements login = new LoginPageElements();
@@ -47,6 +61,9 @@ public class LoginTest extends CommonMethods{
 		Assert.assertEquals(login.errorMsg.getText(), expected, "Error message text is not matched");
 	}
 
+	
+	
+	
 	@Test(enabled=true)
 	public void emptyUsernameLogin() {
 		//LoginPageElements login = new LoginPageElements();

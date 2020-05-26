@@ -1,4 +1,4 @@
-package com.TestNG__class01;
+package com.testNG__class01;
 
 
 import org.testng.annotations.*;
