@@ -12,6 +12,16 @@ public class BaseClass {
 
 	public static WebDriver driver;
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@BeforeMethod// to make this method run before every @Test method
 	public static WebDriver setUp() {
 
@@ -35,6 +45,21 @@ public class BaseClass {
 		//driver.manage().window().fullscreen();
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
 		driver.get(ConfigsReader.getProperty("url"));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		//initialize all page objects as part of setup
 		PageInitializer.initialize();
 		
@@ -42,6 +67,16 @@ public class BaseClass {
 		
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@AfterMethod //to make this method to run after every @Test method
 	public static void tearDown() {
 		if (driver != null) {

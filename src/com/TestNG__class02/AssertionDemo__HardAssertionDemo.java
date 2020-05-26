@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.pages.LoginPageElements;
 import com.utils.CommonMethods;
 
-public class AssertionDemo extends CommonMethods {
+public class AssertionDemo__HardAssertionDemo extends CommonMethods {
 	// This is also called Hard Assert
 
 	@BeforeMethod

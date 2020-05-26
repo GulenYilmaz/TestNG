@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 
-public class HW extends CommonMethods {
+public class HW extends CommonMethods {// where is baseClasss----> common method class---> we have to extends
 
 	@BeforeMethod
 	public void openBrowserAndNavigate() {
@@ -30,8 +30,10 @@ public class HW extends CommonMethods {
 
 	// 1st way
 	// @Test(dependsOnMethods = "invalidLogin" )
+	
 	// 2nd way
 	// @Test(dependsOnMethods = { "invalidLogin" })
+	
 	// depending on multiple methods
 	// @Test(dependsOnMethods = { "invalidLogin", "method2", "method3" })
 
