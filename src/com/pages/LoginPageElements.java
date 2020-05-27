@@ -45,9 +45,9 @@ public class LoginPageElements extends CommonMethods{
 		return username;
 	}
 	
-	public void login(String uid, String pwd) {
-		sendText(username, uid);
-		sendText(password, pwd);
+	public void login(String userid, String passwd) {
+		sendText(username, userid);
+		sendText(password, passwd);
 		click(loginBtn);
 	}
 	
