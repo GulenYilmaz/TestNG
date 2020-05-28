@@ -4,7 +4,32 @@ package com.testNG__class03;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
+/*
+ * Test Parameterization or DataDriven testing-which 
+ * is testing same functionality with different sets of 
+ * data(using different sets of parameters
+ * 
+ * 
+ *Data provider allows us to automatically
+ * run a test case multiple times with different input and validation values. 
+ * 
+ * 
+ * A Data Provider is a method annotated with 
+ * @DataProvider that provides data for a test method.
+ * 
+ * 
+ * 
+ * - Create the data provider method with@DataProvider annotations. 
+ * (Methods return type must be two-dimensional object arrays)
+   - Declare the “Data Provider” name after the @Test annotation.
+   Like – @Test (dataProvider = “data provider method name”)
+   - Pass the arguments in the Test method, what you want to use
+   from the data provider.
+ *  
+   
+   
+   
+ */
 import com.utils.CommonMethods;
 
 public class DataProviderDemo extends CommonMethods {
