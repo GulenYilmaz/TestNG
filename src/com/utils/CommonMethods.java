@@ -245,7 +245,21 @@ public class CommonMethods extends PageInitializer {
 		getJSObject().executeScript("window.scrollBy(0,-" + pixel + ")");
 	}
 
-	
+	/**
+	 * This Method will take a screenshot
+	 * 
+	 * @param filename
+	 */
+	public static void takeScreenshot(String filename) {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File file = ts.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(file, new File("screenshot/" + filename + ".png"));
+		} catch (Exception ex) {
+			System.out.println("Cannot take screenshot!");
+		}
+	}
+
 	public static void wait(int second) {
 		try {
 			Thread.sleep(second * 1000);
@@ -253,34 +267,4 @@ public class CommonMethods extends PageInitializer {
 			e.printStackTrace();
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/**
-	 * this method will take a screenschot
-	 * @param filename
-	 */
-	public static void takeScreenshot(String filename) {
-		
-		TakesScreenshot ts= (TakesScreenshot) driver;
-		File file = ts.getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(file,new File(filename));
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("can not take screenshot!");
-		}
-		
-	}
-	
-	
-	
-	
-	
 }
