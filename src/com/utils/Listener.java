@@ -4,7 +4,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listener implements ITestListener {
+public class Listener extends CommonMethods implements ITestListener {
 	@Override
 	public void onStart(ITestContext context) {
 		System.out.println("Functionality Testing Start");
@@ -18,6 +18,7 @@ public class Listener implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		System.out.println("Test Started " + result.getName());
+		CommonMethods.takeScreenshot("passed "+result.getName());
 	}
 
 	@Override

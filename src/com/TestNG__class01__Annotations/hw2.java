@@ -1,4 +1,4 @@
-package com.testNG__class01;
+package com.TestNG__class01__Annotations;
 
 import java.util.concurrent.TimeUnit;
 

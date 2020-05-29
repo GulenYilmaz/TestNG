@@ -1,4 +1,4 @@
-package com.testNG__class03;
+package com.TestNG__class03__Groups__DataProvider;
 /*
  * 
  * Steps to group tests 

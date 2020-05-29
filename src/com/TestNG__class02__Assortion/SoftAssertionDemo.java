@@ -1,4 +1,4 @@
-package com.testNG__class02;
+package com.TestNG__class02__Assortion;
 
 
 

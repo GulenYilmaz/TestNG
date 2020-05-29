@@ -1,4 +1,4 @@
-package com.testNG__Review01;
+package com.TestNG__Review01;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

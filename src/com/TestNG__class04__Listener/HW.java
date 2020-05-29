@@ -1,29 +1,16 @@
-package com.testNG__class03;
-/*
- * TC 1: HRMS Add Employee: 
- * 1.Open chrome browser
- * 2.Go to “http://166.62.36.207/humanresources/symfony/web/index.php/auth/login”
- * 3.Login into the application
- * 4.Add 5 different Employees and create login credentials by providing: 
- * First Name
- * Last Name
- * Username
- * Password
- * 5.Provide Employee First and Last Name
- * 6.Verify Employee has been added successfully and take screenshot (you must have 5 different screenshots)
- * 7.Close the browserSpecify group for this test case, add it into specific suite and execute from xml file.
- */
-
+package com.TestNG__class04__Listener;
 
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import com.utils.CommonMethods;
 import com.utils.ConfigsReader;
+import com.utils.ExcelUtility;
 
 public class HW extends CommonMethods {
 
-	@Test(dataProvider = "userData")
+	@Test(dataProvider = "userDataFromExcel", groups = { "homework", "addEmp", "regression" })
 	public void test(String firstName, String lastName, String username, String password) {
 		// System.out.println(firstName + " " + lastName + " " + username + " " +
 		// password);
@@ -62,14 +49,15 @@ public class HW extends CommonMethods {
 
 	@DataProvider(name = "userData")
 	public Object[][] getData() {
-		Object[][] data = {
-				{ "Raj", "Capoor", "raj123", "AmirKhan_@123" }, 
-				{ "John", "Smith", "john123", "AmirKhan_@123" }, 
-				{ "Mary", "Ann", "mary123", "AmirKhan_@123" }, 
-				{ "Rohani", "Sakhi", "rohani123", "AmirKhan_@123" },
-				{ "Ali", "Tarlaci", "ali123", "AmirKhan_@123" },
-		};
+		Object[][] data = { { "Raj", "Capoor", "raj123", "AmirKhan_@123" },
+				{ "John", "Smith", "john123", "AmirKhan_@123" }, { "Mary", "Ann", "mary123", "AmirKhan_@123" },
+				{ "Rohani", "Sakhi", "rohani123", "AmirKhan_@123" }, { "Ali", "Tarlaci", "ali123", "AmirKhan_@123" }, };
 		return data;
+	}
+
+	@DataProvider(name = "userDataFromExcel")
+	public Object[][] getData2() {
+		return ExcelUtility.excelIntoArray(System.getProperty("user.dir") + "/testdata/Excel.xlsx", "Employee");
 	}
 
 }
