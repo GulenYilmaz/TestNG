@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- 1 st way -->
+	<!-- <test name ="test class01"> <classes> <class name="com.TestNG__class01__Annotations.DifferentAnnotations"/> 
+		<class name="com.TestNG__class01__Annotations.TaskTwo"/> <class name="com.TestNG__class01__Annotations.TestNGDemo"/> 
+		</classes> </test> -->
+
+	<!-- 2nd way -->
+	<test name="test class01">
+		<packages>
+			<package name="com.class01"></package>
+		</packages>
+		<classes>
+			<class name="com.classo01.TitleLogoAndLoginValidation">
+				<methods>
+					<exclude name=".*"></exclude><!-- all the methods in this class we can exclude -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

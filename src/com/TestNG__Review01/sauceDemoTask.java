@@ -1,5 +1,20 @@
 package com.TestNG__Review01;
-
+/*
+ * <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <test thread-count="5" name="Test">
+ <groups>
+			<run>
+				<include name="sprint"></include>
+			</run>
+		</groups>
+  <classes>
+   <class name="com.syntax.test.sauceDemoPAge"/>
+  </classes>
+ </test> <!-- Test -->
+</suite> <!-- Suite -->
+ */
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;

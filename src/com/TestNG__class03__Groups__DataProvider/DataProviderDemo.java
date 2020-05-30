@@ -34,6 +34,8 @@ import com.utils.CommonMethods;
 
 public class DataProviderDemo extends CommonMethods {
 
+	
+	
 	@Test(dataProvider = "getData")
 	public void login(String username, String password, int age) {
 		System.out.println(age);
@@ -45,9 +47,13 @@ public class DataProviderDemo extends CommonMethods {
 		Assert.assertTrue(isDisplayed, "Welcome msg is not displayed");
 	}
 
+	
+	
+	// I want to try same test with different data
 	// This method that has a @DataProvider annotation
 	// should return a 2D-Array
-	@DataProvider
+	
+	@DataProvider//this data provides different data for this test
 	public Object[][] getData() {
 
 		// This is like doing the following three steps

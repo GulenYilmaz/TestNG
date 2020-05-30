@@ -1,5 +1,6 @@
 package com.utils;
 
+import com.TestNG__Review01.SauceDemoLoginPage;
 import com.pages.AddEmployeePageElements;
 import com.pages.DashboardPageElements;
 import com.pages.LoginPageElements;
@@ -19,6 +20,7 @@ public class PageInitializer extends BaseClass{
 	public static AddEmployeePageElements addEmp;
 	public static DashboardPageElements dashboard;
 	public static PersonalDetailsPageElements pdetails;
+	public static SauceDemoLoginPage demosauce;
 	
 	
 	
@@ -29,5 +31,6 @@ public class PageInitializer extends BaseClass{
 		dashboard=new DashboardPageElements();
 		addEmp=new AddEmployeePageElements();
 		pdetails=new PersonalDetailsPageElements();
+		demosauce=new SauceDemoLoginPage();
 	}
 }

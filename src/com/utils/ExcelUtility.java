@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
 
 public class ExcelUtility {
 	private static Workbook book;
@@ -60,4 +61,9 @@ public class ExcelUtility {
 
 	//HW Create a method that will return a List of Maps
 	
+	@DataProvider (name="ExcelData")
+	public Object [][] excelData(){
+	return	ExcelUtility.excelIntoArray(Constants.EXCELDATA_FILEPATH, "Sheet1");
+		
+	}
 }

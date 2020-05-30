@@ -22,7 +22,7 @@ public class BaseClass {
 	
 	
 	
-	@BeforeMethod// to make this method run before every @Test method
+	@BeforeMethod    (alwaysRun=true)// to make this method run before every @Test method
 	public static WebDriver setUp() {
 
 		ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
@@ -77,7 +77,7 @@ public class BaseClass {
 	
 	
 	
-	@AfterMethod //to make this method to run after every @Test method
+	@AfterMethod (alwaysRun=true)//to make this method to run after every @Test method
 	public static void tearDown() {
 		if (driver != null) {
 			driver.quit();
