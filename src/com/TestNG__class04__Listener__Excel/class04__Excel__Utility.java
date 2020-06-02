@@ -1,4 +1,4 @@
-package com.utils;
+package com.TestNG__class04__Listener__Excel;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -8,8 +8,9 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
-public class ExcelUtility {
-	
+import com.utils.Constants;
+
+public class class04__Excel__Utility {
 	private static Workbook book;
 	private static Sheet sheet;
 
@@ -60,11 +61,11 @@ public class ExcelUtility {
 		return data;
 	}
 
-	// HW Create a method that will return a List of Maps
-
-	@DataProvider(name = "ExcelData")
-	public Object[][] excelData() {
-		return ExcelUtility.excelIntoArray(Constants.EXCELDATA_FILEPATH, "Sheet1");
-
+	//HW Create a method that will return a List of Maps
+	
+	@DataProvider (name="ExcelData")
+	public Object [][] excelData(){
+	return	class04__Excel__Utility.excelIntoArray(Constants.EXCELDATA_FILEPATH, "Sheet1");
+		
 	}
 }

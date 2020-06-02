@@ -6,29 +6,29 @@ import org.testng.ITestResult;
 
 public class Listener extends CommonMethods implements ITestListener {
 	@Override
-	public void onStart(ITestContext context) {
-		System.out.println("Functionality Testing Start");
+	public void onStart(ITestContext context) {     //---> for xml.file testing
+		System.out.println("Functionality xml.file Testing Start");
 	}
 
 	@Override
-	public void onFinish(ITestContext context) {
-		System.out.println("Functionality Testing Finished");
+	public void onFinish(ITestContext context) {    //---> for xml.file testing
+		System.out.println("Functionality xml.file Testing Finished");
 	}
 
 	@Override
-	public void onTestStart(ITestResult result) {
-		System.out.println("Test Started " + result.getName());
+	public void onTestStart(ITestResult result) {    //--->for class testing
+		System.out.println("Test Started inside the class " + result.getName());
 		CommonMethods.takeScreenshot("passed "+result.getName());
 	}
 
 	@Override
-	public void onTestSuccess(ITestResult result) {
-		System.out.println("Test Passed " + result.getName());
+	public void onTestSuccess(ITestResult result) {  //--->for class testing
+		System.out.println("Test Passed inside the class" + result.getName());
 	}
 
 	@Override
-	public void onTestFailure(ITestResult result) {
-		System.out.println("Test Failed " + result.getName());
+	public void onTestFailure(ITestResult result) {  //--->for class testing
+		System.out.println("Test Failed inside the class" + result.getName());
 	}
 
 }

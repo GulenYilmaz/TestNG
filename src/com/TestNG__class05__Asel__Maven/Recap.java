@@ -1,4 +1,4 @@
-package com.TestNG__class05__Asel;
+package com.TestNG__class05__Asel__Maven;
 
 import org.testng.annotations.Test;
 

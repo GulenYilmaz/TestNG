@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite homework">
+	
+	
+	
+	<listeners>
+		<listener class-name="com.utils.Listener"></listener>
+	</listeners>
+	
+	
+	
+	<test name="Test homework">
+		
+		
+		<groups>
+			<run>
+				<include name="homework"></include>
+			</run>
+		</groups>
+
+
+		<classes>
+			<class name="com.TestNG__class04__Listener__Excel.HW" />
+		</classes>
+		
+		
+	</test>
+</suite> 
