@@ -1,6 +1,6 @@
 package com.utils;
 
-import com.TestNG__Review01.SauceDemoLoginPage;
+import com.TestNG__Review__class01.SauceDemoLoginPage;
 import com.pages.AddEmployeePageElements;
 import com.pages.DashboardPageElements;
 import com.pages.LoginPageElements;

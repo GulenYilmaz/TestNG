@@ -1,4 +1,4 @@
-package com.TestNG__Review01;
+package com.TestNG__Review__class01;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
